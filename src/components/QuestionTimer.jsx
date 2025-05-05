@@ -8,7 +8,7 @@ export default function QuestionTimer({timeout, onTimeout}){
         const timer = setTimeout(onTimeout, timeout);
 
         return () => {
-            clearTimeout(timer);
+            clearTimeout(timer); // clear time
         }
     }, [timeout, onTimeout])
     // because we aer using two props onTimeout and timeout, we need to populate dependecies

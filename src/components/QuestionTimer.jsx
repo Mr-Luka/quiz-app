@@ -1,13 +1,33 @@
 import {useState, useEffect} from 'react';
 
 export default function QuestionTimer({timeout, onTimeout}){
+    const [remainingTime, setRemainingTime] = useState(timeout);
 
-    // because we aer using two props onTimeout and timeout, we need to populate dependecies
+    useEffect(()=> {
+        const timer = setTimeout(onTimeout, timeout);
+        
+        return () => {
+            clearTimeout(timer)
+        }
+    }, [onTimeout, timeout])
+
+
+    useEffect(()=> {
+        const interval = setInterval(()=> {
+            setRemainingTime(prevRemainingTime => prevRemainingTime - 100);
+        }, 100);
+
+        return () => {
+            clearInterval(interval)
+        }
+    }, [])
+
+    return (
+        <progress id='question-time' max={timeout} value={remainingTime}/>
+    )
+}
+
+    // because we are using two props onTimeout and timeout, we need to populate dependecies
     // setTimeout(()=> {
     //     onTimeout();
     // }, timeout)
-
- 
-
-
-}

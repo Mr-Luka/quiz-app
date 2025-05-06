@@ -63,3 +63,10 @@ export default function Question({index, onSelectAnswer, onSkipAnswer}){
         />
     </div>)
 }
+
+
+/*
+Question component manages the state and logic for a single question, integrating the timer and handling 
+answer selection and feedback. The dynamic timer and the answerState variable are key to controlling the user 
+experience and visual presentation during the question answering process.
+*/

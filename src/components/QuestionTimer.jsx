@@ -26,7 +26,13 @@ export default function QuestionTimer({timeout, onTimeout, mode}){
         <progress id='question-time' max={timeout} value={remainingTime} className={mode}/>
     )
 }
-
+/*
+This component starts a visual timer that counts down from the timeout value. If the timer reaches zero 
+(or very close to it due to the 100ms interval), it calls the onTimeout function you provided. 
+It also makes sure to clean up the timers when the component is no longer needed to avoid issues. 
+The mode prop allows you to change the appearance of the timer based on whether the question has been answered, 
+was correct, or was wrong.
+*/
     // because we are using two props onTimeout and timeout, we need to populate dependecies
     // setTimeout(()=> {
     //     onTimeout();

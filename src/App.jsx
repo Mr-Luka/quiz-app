@@ -10,7 +10,7 @@ function App() {
 
     return (
         <>
-        <Destinations />
+        <HomePage />
             {/* {userRegistered 
             ? 
                 <HomePage /> 

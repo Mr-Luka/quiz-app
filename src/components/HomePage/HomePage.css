@@ -1,18 +1,19 @@
 .wrapper-home {
   position: relative;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden; 
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .video-home {
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; 
+  z-index: -2;
   filter: blur(1px);
+  object-fit: cover; /* Ensure video covers the background */
 }
 
 .video-home video {
@@ -22,36 +23,34 @@
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1; 
-  color: white; 
+  z-index: 1;
+  color: white;
   text-align: center;
-  background-color: transparent;
-  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.094); 
+  padding: 20px 2.5rem;
   display: flex;
-  justify-content: space-around;
-  align-items: center; 
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header h1 {
-  font-weight: 800;
-  font-size: 3rem;
-  -webkit-text-stroke: 1px white;
-  margin-bottom: 1rem; 
+.welcome-universe-tour {
+  margin-top: 0.5rem; 
   animation: fadeRight 2000ms ease-in-out forwards;
 }
-.header h3 {
-    animation: fadeRight 2000ms ease-in-out forwards;
-}
-.welcome-universe-tour {
-    margin-top: 10rem;
+
+.welcome-universe-tour h1 {
+  font-weight: 400;
+  font-size: 2rem;
+  -webkit-text-stroke: 1px white;
+  margin-bottom: 0.5rem;
 }
 
+
 .nav-bar {
-  margin-top: 5rem;
   animation: fadeLeft 2000ms ease-in-out forwards;
 }
 
@@ -59,20 +58,38 @@
   list-style: none;
   padding: 0;
   display: flex;
-  flex-direction: column;
-  gap: 20px; 
+  gap: 30px; /* Adjust spacing */
 }
 
 .nav-ul li {
-  margin-top: 5rem;
   color: white;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .nav-ul li:hover {
-  color: rgb(148, 220, 230); 
+  color: rgb(148, 220, 230);
   font-weight: 600;
+}
+
+.welcome-name {
+  color: white;
+  text-align: center;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-name h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: showUp 4000ms ease-in-out forwards;
+}
+
+.welcome-name h2 span {
+  font-size: 4rem;
 }
 
 @keyframes fadeLeft {
@@ -95,3 +112,21 @@
         transform: translateX(0)
     }
 }
+
+@keyframes showUp {
+    0% {
+      opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+  }

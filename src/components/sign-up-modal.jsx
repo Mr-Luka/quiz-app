@@ -10,7 +10,7 @@ const SignUpModal = forwardRef((props, ref) => {
 
     console.log('Final Sign Up Initiated');
   
-    props.close(); 
+    props.onClose(); 
   };
 
   useImperativeHandle(ref, () => ({

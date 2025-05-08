@@ -201,8 +201,7 @@ body {
   line-height: inherit;
 }
 
-.sign-up-2,
-.scroll-to-accept-button {
+.sign-up-2 {
   padding: 10px 20px; 
   background-color: rgba(255, 255, 255, 0);
   color: white;
@@ -214,8 +213,7 @@ body {
   box-shadow: 1px 1px 10px #00c8ffc7; 
 }
 
-.sign-up-2:hover,
-.scroll-to-accept-button {
+.sign-up-2:hover {
     cursor: pointer;
     box-shadow: 1px 1px 10px black; 
     background-color: #00c8ffc7; 

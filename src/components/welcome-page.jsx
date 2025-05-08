@@ -32,8 +32,6 @@ export default function WelcomePage() {
         </div>
         <video src={welcomeVideo} autoPlay loop muted></video>
       </div>
-
-      {/* Always render the modal */}
       <SignUpModal ref={modalRef} onClose={handleCloseModal} />
     </>
   );

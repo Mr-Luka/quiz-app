@@ -74,7 +74,7 @@ body {
   transition: all 0.5s ease;
   border: none;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 1rem;
   background: rgba(20, 20, 20, 0.222);
   backdrop-filter: blur(10px);
   color: white;
@@ -84,7 +84,8 @@ body {
   box-shadow: 5px 5px 15px black;
   display: flex;
   flex-direction: column;
-
+  height: 27rem;
+  overflow-y:hidden; 
 }
 
 .signup-modal[open] {
@@ -95,7 +96,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px; 
-  margin-bottom: 20px; 
+  margin-top: 3rem;
 } 
 .input-wrap{
     display: flex;
@@ -200,7 +201,8 @@ body {
   line-height: inherit;
 }
 
-.sign-up-2 {
+.sign-up-2,
+.scroll-to-accept-button {
   padding: 10px 20px; 
   background-color: rgba(255, 255, 255, 0);
   color: white;
@@ -212,11 +214,54 @@ body {
   box-shadow: 1px 1px 10px #00c8ffc7; 
 }
 
-.sign-up-2:hover {
+.sign-up-2:hover,
+.scroll-to-accept-button {
     cursor: pointer;
     box-shadow: 1px 1px 10px black; 
     background-color: #00c8ffc7; 
+}
 
+.sign-up-form-2{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.scroll-to-accept-button{
+    margin-top: 1rem;
+}
+
+.scroll-to-accept-form{
+    text-align: center;
+    height: 100%;
+}
+
+.terms-and-conditions {
+  overflow-y: auto; 
+  max-height: 280px; 
+  padding-right: 10px; 
+  text-align:left;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.terms-and-conditions::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.terms-and-conditions::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Color of the track */
+  border-radius: 10px;
+}
+
+.terms-and-conditions::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5); /* Color of the thumb */
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0); /* Add a border to make it stand out */
+  background-clip: padding-box;
+}
+
+.terms-and-conditions::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* Lighter on hover */
 }
 
 @keyframes dropIn {

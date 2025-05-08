@@ -19,7 +19,7 @@ export default function HomePage(){
                 <div className="nav-bar">
                     <ul className="nav-ul">
                         <li>Home</li>
-                        <li>Destination</li>
+                        <li>Destinations</li>
                         <li>Crew</li>
                         <li>Technology</li>
                     </ul>

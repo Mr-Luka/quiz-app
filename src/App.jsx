@@ -4,8 +4,10 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 
 import WelcomePage from './components/welcome-page.jsx';
 import HomePage from './components/HomePage/HomePage.jsx';
-import Exodus from './components/HomePage/Destinations/Exodus/Exodus.jsx';
 import HomePageLayout from './components/HomePage/Home-page-layout';
+
+import Exodus from './components/HomePage/Destinations/Exodus/Exodus.jsx';
+import Plantia from './components/HomePage/Destinations/Plantia/Plantis';
 
 function App() {
   const [userRegistered, setUserRegistered] = useState(false); 
@@ -33,6 +35,7 @@ function App() {
         <Route path="/home" element={<HomePage userName={userName} />} />
         <Route path="/destinations" element={<HomePage showDestinations={true} userName={userName} />} />
         <Route path="/exodus" element={<HomePageLayout><Exodus /></HomePageLayout>} />
+        <Route path="/plantia" element={<HomePageLayout><Plantia /></HomePageLayout>} />
       </Routes>
     </Router>
   );

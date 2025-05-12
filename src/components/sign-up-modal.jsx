@@ -6,11 +6,9 @@ const SignUpModal = forwardRef((props, ref) => {
   const dialog = useRef();
   const [signUp, setSignUp] = useState(false);
 
-  const handleFinalSignUp = () => {
-
-    console.log('Final Sign Up Initiated');
-  
-    props.onClose(); 
+  const handleFinalSignUp = () => {  
+    props.onClose();
+    props.onSignUpSuccess(); // call the success callback
   };
 
   useImperativeHandle(ref, () => ({

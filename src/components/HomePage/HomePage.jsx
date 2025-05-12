@@ -42,6 +42,8 @@ export default function HomePage(){
             <h2>First LastName<br/> <span>Welcome</span><br/> to YOUR journey</h2>
         </div>
       )}
-      {showDestinations && <Destinations />}
+      {showDestinations && <section className="destinations">
+         <Destinations />
+      </section>}
     </div>
 )}

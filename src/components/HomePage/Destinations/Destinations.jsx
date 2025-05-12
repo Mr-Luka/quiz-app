@@ -1,13 +1,14 @@
 import ExodusVideo from '../../../assets/media/exodus/water-planet.mp4';
 import PlantiaVideo from '../../../assets/media/plantia/nature-planet.mp4';
-import MarsVideo from '../../../assets/media/mars/mars.mp4';
+import MarsVideo from '../../../assets/media/mars/mars-planet.mp4';
+
 
 import './Destinations.css';
 
-export default function Destinations(){
+export default function Destinations({planetName, planetInfo, planetVideo}){
 
     return (
-        <section className="destinations">
+        <>
                 <div>
                     <video src={ExodusVideo} autoPlay muted loop></video>
                     <div className="text">
@@ -21,7 +22,7 @@ export default function Destinations(){
                                 Welcome to Water Planet EXODUS.
                                 <br/>Main Species: Naga
                             </p>
-                            <a href="#" className="article-link" onclick="location.href='exodus.html'">
+                            <a href="#" className="article-link">
                                 More Info
                             </a>
                     </div>
@@ -39,7 +40,7 @@ export default function Destinations(){
                                 Welcome to Mars, our red planet sister.
                                 <br/>Main Species: Second generation People (Martian)
                             </p>
-                            <a href="#" className="article-link" onclick="location.href='mars.html'">
+                            <a href="#" className="article-link">
                                 More Info
                             </a>
                     </div>
@@ -57,12 +58,11 @@ export default function Destinations(){
                                 Welcome to nature planet, merged with Plants.
                                 <br/>Main Species: Plantians
                             </p>
-                            <a href="#" className="article-link" onclick="location.href='plantia.html'">
+                            <a href="#" className="article-link" >
                                 More Info
                             </a>
                     </div>
                 </div>
-                
-            </section>
+            </>
     )
 }

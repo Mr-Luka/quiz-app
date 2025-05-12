@@ -1,64 +1,22 @@
-import ExodusVideo from '../../../assets/media/exodus/water-planet.mp4';
-import PlantiaVideo from '../../../assets/media/plantia/nature-planet.mp4';
-import MarsVideo from '../../../assets/media/mars/mars-planet.mp4';
-
-
 import './Destinations.css';
 
-export default function Destinations({planetName, planetInfo, planetVideo}){
-
+export default function Destinations({planetName, planetWelcome, species, planetVideo}){
     return (
         <>
                 <div>
-                    <video src={ExodusVideo} autoPlay muted loop></video>
+                    <video src={planetVideo} autoPlay muted loop></video>
                     <div className="text">
                         <p className="sub-heading">
                             Destination:
                         </p>
                             <h1 className="title-destination">
-                                EXODUS
+                                {planetName}
                             </h1>
                             <p className="planet-preview-p">
-                                Welcome to Water Planet EXODUS.
-                                <br/>Main Species: Naga
+                                {planetWelcome}
+                                <br/>Main Species: {species}
                             </p>
                             <a href="#" className="article-link">
-                                More Info
-                            </a>
-                    </div>
-                </div>
-                <div>
-                    <video src={MarsVideo} autoPlay muted loop></video>
-                    <div className="text">
-                        <p className="sub-heading">
-                            Destination:
-                        </p>
-                            <h1 className="title-destination">
-                                MARS
-                            </h1>
-                            <p className="planet-preview-p">
-                                Welcome to Mars, our red planet sister.
-                                <br/>Main Species: Second generation People (Martian)
-                            </p>
-                            <a href="#" className="article-link">
-                                More Info
-                            </a>
-                    </div>
-                </div>
-                <div>
-                    <video src={PlantiaVideo} autoPlay muted loop></video>
-                    <div className="text">
-                        <p className="sub-heading">
-                            Destination:
-                        </p>
-                            <h1 className="title-destination">
-                                PLANTIA
-                            </h1>
-                            <p className="planet-preview-p">
-                                Welcome to nature planet, merged with Plants.
-                                <br/>Main Species: Plantians
-                            </p>
-                            <a href="#" className="article-link" >
                                 More Info
                             </a>
                     </div>

@@ -54,6 +54,8 @@
  }
  .title-destination {
     margin: 0.2em 0 0.7em 0;
+    color: white;
+    animation: showUp 4000ms ease-in-out forwards;
  }
  .sub-heading {
     position: relative;

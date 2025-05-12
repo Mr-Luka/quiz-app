@@ -1,5 +1,6 @@
 import AroundTheWorldHomePage from '../../../public/home-page.mp4';
 import Destinations from './Destinations/Destinations.jsx';
+import {PLANETS} from '../Planets/planets.js'
 
 import './HomePage.css';
 
@@ -43,7 +44,9 @@ export default function HomePage(){
         </div>
       )}
       {showDestinations && <section className="destinations">
-         <Destinations />
+         <Destinations planetVideo={PLANETS[0].planetVideo} planetName={PLANETS[0].planet} planetWelcome={PLANETS[0].planetWelcome} species={PLANETS[0].species} />
+         <Destinations planetVideo={PLANETS[1].planetVideo} planetName={PLANETS[1].planet} planetWelcome={PLANETS[1].planetWelcome} species={PLANETS[1].species} />
+         <Destinations planetVideo={PLANETS[2].planetVideo} planetName={PLANETS[2].planet} planetWelcome={PLANETS[2].planetWelcome} species={PLANETS[2].species} />
       </section>}
     </div>
 )}

@@ -1,3 +1,10 @@
+.destination-div{
+    background-color: black;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+}
+
 #destination-video{
     position: absolute;
     top: 0;
@@ -9,13 +16,52 @@
 }
 
 .destination-promo-wrapper{
-    margin-top: 5rem;
+    margin-top: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
+
+
+.destination-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#destination span{
+    margin-top: 15rem;
+    font-size: 11rem;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Poiret One", sans-serif;
+    animation: fadeDown 3000ms ease-in-out forwards;
+}
+#catch {
+    font-size: 2rem;
+    color: white;
+    font-family: "Poiret One", sans-serif;
+    animation: fadeRight 4000ms ease-in-out forwards;
+    text-align: center;
+}
+#hr-destination {
+    width: 10%;
+    margin-left: 9.5rem;
+    margin-top: 20rem;
+}
+
+.promo-exodus p{
+    box-shadow: rgba(6, 100, 4, 0.327) 11px 6px 2rem 0px;
+    background-color: rgba(16, 57, 36, 0.522);
+}
+
+
 .destination-promo {
     display: flex;
     justify-content: space-between;
@@ -34,13 +80,13 @@
     box-shadow: rgb(0, 191, 255) 11px 6px 2rem -3px;  
 }
 #destination-promo-video-exodus-1 {  
-    width: 30%;
+    width: 40%;
     margin-top: 1rem;
     margin-left: 5%;
     animation: fadeRight 4500ms ease-in-out forwards;
 }
 #destination-promo-video-exodus-2 { 
-    width: auto;
+    width: 50%;
     animation: fadeRight 7000ms ease-in-out forwards;
 }
 #destination-promo-video-exodus-3{  
@@ -50,7 +96,8 @@
 #destination-promo-video-exodus-4 {
     width: 90%;
     margin-left: 5%;
-    margin-top: 10rem;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
 }
 
 #destination-promo-video-exodus-1:hover,
@@ -64,7 +111,7 @@
 
 .destination-promo p{
     font-family: "Poiret One", sans-serif;
-    font-size: 2rem;
+    font-size: 1.2rem;
     background-color: rgba(17, 16, 57, 0.522);
     backdrop-filter: blur(1px);
     padding: 1.5rem;
@@ -74,31 +121,54 @@
 }
 p#destination-p-exodus1 {
     margin-left: -40rem;
-    width:55%;
+    width:50%;
     animation: fadeRight 9000ms ease-in-out forwards;
 }
 p#destination-exodus2{
     width:50%;
     left: 5%;
-    margin-top: 10rem;
+    margin-top: 2rem;
     animation: fadeRight 4500ms ease-in-out forwards;
 }
 p#destination-exodus3 {
     width: 57%;
     margin-left: -15rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     animation: fadeLeft 4500ms ease-in-out forwards;
 }
 p#destination-exodus4{
     font-family: "Poiret One", sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     position: absolute;
     width: 100%;
     left: 0%;
-    margin-top: 70rem;
-    padding-bottom: 5rem;
+    margin-top: 40rem;
+    margin-bottom: 15rem;
     background-color: none;
     border: none;
     box-shadow: none;
     animation: fadeUp 4500ms ease-in-out forwards;
+}
+
+@media (min-width:769px) {
+  .destination-exodus{
+        margin-top: 7rem;
+    }
+    
+  .destination-promo p{
+    font-size: 2rem;
+  }
+
+  #destination-promo-video-exodus-2{
+    margin-top: 15rem;
+  }
+
+  p#destination-exodus4{
+    font-size: 2.5rem;
+    margin-top: 60rem;
+  }
+
+  p#destination-exodus3{
+    width: 50%;
+  }
 }

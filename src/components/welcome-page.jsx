@@ -17,9 +17,9 @@ export default function WelcomePage({onRegisterSuccess}) {
   setModalOpen(false);
 }
 
-const handleSuccessfulSignUp = () => {
+const handleSuccessfulSignUp = (name) => {
   handleCloseModal(); // close the modal
-  onRegisterSuccess() // update the userRegistered state in app
+  onRegisterSuccess(name) // update the userRegistered state in app
 }
 
   return (

@@ -5,12 +5,12 @@ import Destinations from './Destinations/Destinations';
 import './HomePage.css';
 
 
-export default function HomePage({ showDestinations }) {
+export default function HomePage({ showDestinations, userName = "Explorer" }) {
   return (
     <div className="wrapper-home">
       {!showDestinations && (
         <div className="video-home">
-          <video id="home-video" src={AroundTheWorldHomePage} autoPlay loop muted></video>
+          <video id="home-video" src={AroundTheWorldHomePage} autoPlay loop muted />
         </div>
       )}
       <div className="header">
@@ -26,11 +26,13 @@ export default function HomePage({ showDestinations }) {
           </ul>
         </div>
       </div>
+
       {!showDestinations && (
-        <div className='welcome-name'>
-          <h2>First LastName<br/> <span>Welcome</span><br/> to YOUR journey</h2>
+        <div className="welcome-name">
+          <h2>{userName}<br /><span>Welcome</span><br />to YOUR journey</h2>
         </div>
       )}
+
       {showDestinations && (
         <section className="destinations">
           {PLANETS.map((planet, index) => (

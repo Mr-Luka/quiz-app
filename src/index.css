@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -7,8 +8,10 @@
 
 /* Mobile first */
 body {
+  width: 100%;
   max-width: 768px;
   height: auto;
+  margin: 0 auto;
 }
 
 .welcome-video-sign-up {
@@ -291,3 +294,9 @@ body {
     }
   }
 
+@media (min-width:769px) {
+  body {
+    max-width: none;
+    width: 100%;
+  }
+}

@@ -5,10 +5,11 @@ import SignUpModalScrollToAccept from './sign-up-modal-details';
 const SignUpModal = forwardRef((props, ref) => {
   const dialog = useRef();
   const [signUp, setSignUp] = useState(false);
+  const [name, setName] = useState('');
 
   const handleFinalSignUp = () => {  
     props.onClose();
-    props.onSignUpSuccess(); // call the success callback
+    props.onSignUpSuccess(name); // call the success callback
   };
 
   useImperativeHandle(ref, () => ({
@@ -37,24 +38,32 @@ const SignUpModal = forwardRef((props, ref) => {
         <form className="sign-up-form" onSubmit={handleSubmit} method="dialog">
           <div className="input-wrap">
             <label htmlFor="name">Full Name</label>
-            <input type="text" name="name" required />
+            <input
+              type="text"
+              name="name"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
           <div className="input-wrap">
             <label htmlFor="email">Email Address</label>
             <input type="email" name="email" required />
           </div>
           <div className="age">
-            <small className='my-age'>I am over 21 years of age</small>
+            <small className="my-age">I am over 21 years of age</small>
             <div>
               <small>No</small>
               <div className="switch">
-                <input type="checkbox" required /> 
+                <input type="checkbox" required />
                 <span className="slider"></span>
               </div>
               <small>Yes</small>
             </div>
           </div>
-          <button className="sign-up-2" type="submit">Sign Me Up!</button>
+          <button className="sign-up-2" type="submit">
+            Sign Me Up!
+          </button>
         </form>
       ) : (
         <SignUpModalScrollToAccept onAccept={handleFinalSignUp} />

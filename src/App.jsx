@@ -4,14 +4,16 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 
 import WelcomePage from './components/welcome-page.jsx';
 import HomePage from './components/HomePage/HomePage.jsx';
-import Destinations from './components/HomePage/Destinations/Destinations.jsx';
 import Exodus from './components/HomePage/Destinations/Exodus/Exodus.jsx';
+import HomePageLayout from './components/HomePage/Home-page-layout';
 
 function App() {
   const [userRegistered, setUserRegistered] = useState(false); 
+  const [userName, setUserName] = useState('Explorer');
 
   // Function to handle successful registration
-  const handleRegistrationSuccess = () => {
+  const handleRegistrationSuccess = (name) => {
+    setUserName(name)
     setUserRegistered(true);
   };
 
@@ -21,13 +23,16 @@ function App() {
         <Route
           path="/"
           element={
-            userRegistered ? <Navigate to="/home" replace /> : <WelcomePage onRegisterSuccess={handleRegistrationSuccess} />
+            userRegistered ? (
+              <Navigate to="/home" replace />
+            ) : (
+              <WelcomePage onRegisterSuccess={handleRegistrationSuccess} />
+            )
           }
         />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/destinations" element={<HomePage showDestinations={true} />} /> {/* Pass prop to trigger rendering */}
-        <Route path="/exodus" element={<Exodus />} />
-        {/* Add other routes as needed */}
+        <Route path="/home" element={<HomePage userName={userName} />} />
+        <Route path="/destinations" element={<HomePage showDestinations={true} userName={userName} />} />
+        <Route path="/exodus" element={<HomePageLayout><Exodus /></HomePageLayout>} />
       </Routes>
     </Router>
   );

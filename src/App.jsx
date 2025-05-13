@@ -8,6 +8,7 @@ import HomePageLayout from './components/HomePage/Home-page-layout';
 
 import Exodus from './components/HomePage/Destinations/Exodus/Exodus.jsx';
 import Plantia from './components/HomePage/Destinations/Plantia/Plantia.jsx';
+import Mars from './components/HomePage/Destinations/Mars/Mars.jsx';
 
 function App() {
   const [userRegistered, setUserRegistered] = useState(false); 
@@ -36,6 +37,7 @@ function App() {
         <Route path="/destinations" element={<HomePage showDestinations={true} userName={userName} />} />
         <Route path="/exodus" element={<HomePageLayout><Exodus /></HomePageLayout>} />
         <Route path="/plantia" element={<HomePageLayout><Plantia /></HomePageLayout>} />
+        <Route path="/mars" element={<HomePageLayout><Mars /></HomePageLayout>} />
       </Routes>
     </Router>
   );

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import WelcomePage from './components/welcome-page.jsx';
 import HomePage from './components/HomePage/HomePage.jsx';
 import HomePageLayout from './components/HomePage/Home-page-layout';
+import Crew from './components/HomePage/Crew/Crew.jsx';
 
 import Exodus from './components/HomePage/Destinations/Exodus/Exodus.jsx';
 import Plantia from './components/HomePage/Destinations/Plantia/Plantia.jsx';
@@ -38,6 +39,7 @@ function App() {
         <Route path="/exodus" element={<HomePageLayout><Exodus /></HomePageLayout>} />
         <Route path="/plantia" element={<HomePageLayout><Plantia /></HomePageLayout>} />
         <Route path="/mars" element={<HomePageLayout><Mars /></HomePageLayout>} />
+        <Route path="/crew" element={<HomePageLayout><Crew /></HomePageLayout>} />
       </Routes>
     </Router>
   );

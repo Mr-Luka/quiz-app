@@ -1,0 +1,29 @@
+.crew-info {
+    width: 90%;
+    left: 5%;
+    margin-top: 25%;
+}
+
+.crew-segment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.general{
+    margin-top: 40rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.generals {
+    width: 45%;
+    border-radius: 30px;
+    border: 10px solid rgba(90, 104, 1, 0.863);
+    box-shadow: rgb(0, 255, 213) 11px 6px 2rem -3px;
+}
+#main-general{
+    border: 10px solid rgba(104, 1, 1, 0.863);
+    box-shadow: rgb(255, 0, 0) 11px 6px 2rem -3px;
+}

@@ -1,0 +1,80 @@
+.destination-plantia-title{
+    margin-top: 2rem;
+    animation: showUp 4000ms ease-in-out forwards;
+}
+
+.plantia-segment{
+    width: 95%;
+}
+
+.plantia-segment video{
+    border-radius: 30px;
+    border: 10px solid rgba(255, 255, 255, 0.191);
+    box-shadow: rgb(12, 178, 7) 11px 6px 2rem -3px; 
+}
+
+.plantia-segment video:hover {
+    transition: transform 0.4s;
+    border: none;
+    box-shadow: rgb(40, 211, 171) 11px 6px 7rem -3px;
+}
+
+#plantia-1-video{
+    width: 45%;
+    animation: fadeLeft 3500ms ease-in-out forwards;
+}
+
+#plantia-2-video{
+    margin-top: 2rem;
+    width: 55%;
+    animation: fadeRight 5000ms ease-in-out forwards;
+}
+
+#plantia-3-video{
+    width: 50%;
+}
+
+#plantia-4-video{
+    margin-top: 5rem;
+    width: 60%;
+}
+
+#plantia-5-video{
+    margin-top: 7rem;
+    width: 50%;
+}
+
+#plantia-6-video{
+    margin-top: 8rem;
+}
+
+#destination-plantia-1 {
+    animation: fadeRight 5000ms ease-in-out forwards;
+
+}
+
+#destination-plantia-2 {
+    margin-top: 1rem;
+    animation: fadeLeft 5000ms ease-in-out forwards;
+
+}
+
+#destination-plantia-3{
+    margin: 3rem 0;
+}
+
+#destination-plantia-4 {
+    margin-top: 5rem;
+}
+
+#destination-plantia-5 {
+    margin-top: 8rem;
+}
+
+#destination-plantia-6 {
+    margin: 3rem 0;
+}
+
+.promo-plantia p {
+    background-color: rgba(44, 57, 16, 0.522);
+}

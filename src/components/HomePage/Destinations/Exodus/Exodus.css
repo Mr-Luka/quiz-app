@@ -41,13 +41,13 @@
     justify-content: center;
     width: 100%;
     font-family: "Poiret One", sans-serif;
-    animation: fadeDown 3000ms ease-in-out forwards;
+    animation: fadeDown 2000ms ease-in-out forwards;
 }
 #catch {
     font-size: 2rem;
     color: white;
     font-family: "Poiret One", sans-serif;
-    animation: fadeRight 4000ms ease-in-out forwards;
+    animation: fadeRight 3000ms ease-in-out forwards;
     text-align: center;
 }
 #hr-destination {
@@ -71,10 +71,7 @@
     width: 90%;
 }
 
-#destination-promo-video-exodus-1,
-#destination-promo-video-exodus-2,
-#destination-promo-video-exodus-3,
-#destination-promo-video-exodus-4 {
+ .exodus-segment video {
     border-radius: 30px;
     border: 10px solid rgba(255, 255, 255, 0.191);
     box-shadow: rgb(0, 191, 255) 11px 6px 2rem -3px;  
@@ -83,15 +80,15 @@
     width: 40%;
     margin-top: 1rem;
     margin-left: 5%;
-    animation: fadeRight 4500ms ease-in-out forwards;
+    animation: fadeRight 3500ms ease-in-out forwards;
 }
 #destination-promo-video-exodus-2 { 
     width: 50%;
-    animation: fadeRight 7000ms ease-in-out forwards;
+    animation: fadeRight 5000ms ease-in-out forwards;
 }
 #destination-promo-video-exodus-3{  
     width: 50%;
-    animation: fadeLeft 4500ms ease-in-out forwards;
+    animation: fadeLeft 3500ms ease-in-out forwards;
 }
 #destination-promo-video-exodus-4 {
     width: 90%;
@@ -122,19 +119,19 @@
 p#destination-p-exodus1 {
     margin-left: -40rem;
     width:50%;
-    animation: fadeRight 9000ms ease-in-out forwards;
+    animation: fadeRight 3000ms ease-in-out forwards;
 }
 p#destination-exodus2{
     width:50%;
     left: 5%;
     margin-top: 2rem;
-    animation: fadeRight 4500ms ease-in-out forwards;
+    animation: fadeRight 3500ms ease-in-out forwards;
 }
 p#destination-exodus3 {
     width: 57%;
     margin-left: -15rem;
     margin-top: 1rem;
-    animation: fadeLeft 4500ms ease-in-out forwards;
+    animation: fadeLeft 3500ms ease-in-out forwards;
 }
 p#destination-exodus4{
     font-family: "Poiret One", sans-serif;
@@ -147,7 +144,7 @@ p#destination-exodus4{
     background-color: none;
     border: none;
     box-shadow: none;
-    animation: fadeUp 4500ms ease-in-out forwards;
+    animation: fadeUp 3500ms ease-in-out forwards;
 }
 
 @media (min-width:769px) {

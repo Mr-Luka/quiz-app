@@ -7,7 +7,7 @@ import HomePage from './components/HomePage/HomePage.jsx';
 import HomePageLayout from './components/HomePage/Home-page-layout';
 
 import Exodus from './components/HomePage/Destinations/Exodus/Exodus.jsx';
-import Plantia from './components/HomePage/Destinations/Plantia/Plantis';
+import Plantia from './components/HomePage/Destinations/Plantia/Plantia.jsx';
 
 function App() {
   const [userRegistered, setUserRegistered] = useState(false); 

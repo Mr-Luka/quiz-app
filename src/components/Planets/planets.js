@@ -20,7 +20,7 @@ import marsAmerica from '../../assets/media/mars/mars-america.mp4';
 import marsExploring from '../../assets/media/mars/mars-exploring.mp4';
 import marsHiking from '../../assets/media/mars/mars-hiking.mp4';
 import marsWalking from '../../assets/media/mars/mars-walking.mp4';
-import mars from '../../assets/media/mars/mars.mp4'
+import mars from '../../assets/media/mars/mars.mp4';
 
 export const PLANETS = [
     {

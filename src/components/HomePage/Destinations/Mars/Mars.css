@@ -1,0 +1,11 @@
+.mars-text{
+    margin-top: 10rem;
+    width: 85%;
+}
+
+.destination-promo-mars-1 video,
+.destination-promo-mars-2 video{
+    border-radius: 30px;
+    border: 10px solid rgba(255, 255, 255, 0.191);
+    box-shadow: rgb(255, 123, 0) 11px 6px 2rem -3px;
+}

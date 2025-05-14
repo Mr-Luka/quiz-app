@@ -1,3 +1,20 @@
+.crew {
+    background-color: rgb(67, 89, 116);
+    position: relative;
+    z-index: 0;
+}
+
+#destination-video-screw{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center;
+}
+
 .crew-info {
     width: 90%;
     left: 5%;
@@ -12,13 +29,21 @@
 }
 
 .general{
-    margin-top: 40rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
 }
 
+.general-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14rem;
+}
+
 .generals {
-    width: 45%;
+    width: 35%;
     border-radius: 30px;
     border: 10px solid rgba(90, 104, 1, 0.863);
     box-shadow: rgb(0, 255, 213) 11px 6px 2rem -3px;
@@ -27,3 +52,55 @@
     border: 10px solid rgba(104, 1, 1, 0.863);
     box-shadow: rgb(255, 0, 0) 11px 6px 2rem -3px;
 }
+
+.general-info{
+    background-color: rgba(165, 42, 42, 0.798);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid white;
+    font-size: 1.2rem;
+}
+
+.general-info p:first-child {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.general-info p:first-child span {
+    font-size: 2rem;
+    background-color: rgba(165, 42, 42, 0.223);
+    border-radius: 15px;;
+    padding: 1rem;
+    box-shadow: rgb(96, 0, 0) 11px 6px 2rem -3px;
+}
+
+.general-2{
+    width: 65%;
+    font-size: 1.2rem;
+}
+
+.general-3,
+.general-5{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.general-5{
+    margin-bottom: 4rem;
+}
+
+@media (min-width:769px){
+    .general-1{
+        margin-top: 35rem;
+    }
+
+    .generals{
+        width: 40%;
+    }
+
+    .general-info-2{
+        height: 50%;
+        margin-top: 20rem;
+    }
+}
+

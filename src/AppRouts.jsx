@@ -5,6 +5,8 @@ import WelcomePage from './components/welcome-page.jsx';
 import HomePage from './components/HomePage/HomePage.jsx';
 import HomePageLayout from './components/HomePage/Home-page-layout.jsx';
 import Crew from './components/HomePage/Crew/Crew.jsx';
+import Technology from './components/HomePage/Technology/Technology.jsx';
+
 import Exodus from './components/HomePage/Destinations/Exodus/Exodus.jsx';
 import Plantia from './components/HomePage/Destinations/Plantia/Plantia.jsx';
 import Mars from './components/HomePage/Destinations/Mars/Mars.jsx';
@@ -42,6 +44,7 @@ function AppRoutes({ userRegistered, userName, handleRegistrationSuccess }) {
       <Route path="/plantia" element={<HomePageLayout><Plantia /></HomePageLayout>} />
       <Route path="/mars" element={<HomePageLayout><Mars /></HomePageLayout>} />
       <Route path="/crew" element={<HomePageLayout><Crew /></HomePageLayout>} />
+      <Route path="/technology" element={<HomePageLayout><Technology /></HomePageLayout>} />
     </Routes>
   );
 }

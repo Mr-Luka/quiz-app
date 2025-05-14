@@ -10,7 +10,7 @@
 body {
   width: 100%;
   max-width: 768px;
-  height: auto;
+  height: 100vh;
   margin: 0 auto;
 }
 
